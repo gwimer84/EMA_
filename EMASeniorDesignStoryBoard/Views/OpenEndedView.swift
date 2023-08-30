@@ -53,13 +53,16 @@ class OpenEndedView: UIViewController{
             case .dark:
                 answerField.textColor = .white
                 answerField.backgroundColor = .systemGray5
+                answerField.textAlignment = .center
                 question.textColor = .white
                 question.backgroundColor = .systemBlue
             case .light, .unspecified:
                 answerField.textColor = .black
                 answerField.backgroundColor = .white
+                answerField.textAlignment = .center
                 question.textColor = .white
                 question.backgroundColor = .systemBlue
+                
             @unknown default:
                 break
             }

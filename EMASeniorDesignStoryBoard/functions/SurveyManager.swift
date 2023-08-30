@@ -21,7 +21,7 @@ class SurveyManager{
     private var max = SurveyArray.allQuestions.count
     public static let Survey = SurveyManager()
     private var counter: Int = 0
-    
+
     func resetCounter(){
         counter = 0
         
@@ -93,7 +93,6 @@ class SurveyManager{
                 return (OpenEndedView())
             case "Time":
                 return (TimedView())
-                
             default:
                 return (HomeView())
             }

@@ -117,7 +117,7 @@ class LoginScreen: UIViewController {
             Thread.sleep(forTimeInterval: 1)
             if(SurveyManager.Survey.getCounter() == 0){
                 if(check == true){
-                    navigationController?.pushViewController(SurveyManager.Survey.firstQuestion(), animated: true)
+                    navigationController?.pushViewController(SurveyManager.Survey.previousQuestion(), animated: true)
                 }else{
                     navigationController?.pushViewController(HomeView(), animated: true)
                 }
