@@ -3,15 +3,6 @@
 //  EMASeniorDesignStoryBoard
 //
 //  Created by grw5132 on 3/26/23.
-//
-
-import Foundation
-//
-//  SurveryManager.swift
-//  EMASeniorDesignStoryBoard
-//
-//  Created by gwimer on 2/13/23.
-//
 
 import Foundation
 import UIKit

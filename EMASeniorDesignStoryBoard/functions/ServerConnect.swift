@@ -5,6 +5,7 @@
 //  Created by gwimer on 2/13/23.
 //
 import Foundation
+import UIKit
 class ServerConnect{
     
     private var userID = 0;
@@ -112,6 +113,15 @@ class ServerConnect{
                }
                    .resume()
     }
+	
+	func applicationDidEnterBackground(_ application: UIApplication) {
+		serverCon.Send_Survey(completion: send_survey, payload: JSONEncoding.encoderJSON.getArrayOfAnswers())
+		SurveyManager.Survey.resetSurvey()
+		SurveyManager.Survey.resetCounter()
+	}
+	@objc func send_survey(input:Bool){
+		check = input;
+	}
 }
     
     
